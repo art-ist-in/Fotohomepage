@@ -1,19 +1,20 @@
-copyright = "© Your Name"
+copyright = "© Ulrike Jozwiak"
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy"]
 enableRobotsTXT = true
-languageCode = "en"
+languageCode = "de"
 timeZone = "Europe/Berlin"
 timeout = "120s"
-title = "Gallery"
+title = "art-ist-in"
 
 [params]
   defaultTheme = "dark"
   description = "Example site for hugo-theme-gallery"
   title = "My Gallery"
+  bigPicture = "img/big-picture.jpg"
   [params.author]
     email = "user@example.com"
-    name = "Your Name"
+    name = "Ulrike Jozwiak"
   [params.socialIcons]
     facebook = "https://www.facebook.com/"
     instagram = "https://www.instagram.com/"
@@ -50,9 +51,13 @@ title = "Gallery"
 
 [menu]
   [[menu.footer]]
-    name = "GitHub"
-    url = "https://github.com/nicokaiser/hugo-theme-gallery/"
+    name = "MeinOrtMalerei"
+    url = "https://art-ist-in.github.io/Meinortmalerei/"
     weight = 3
+  [[menu.footer]]
+    name = "ZiKiNos"
+    url = "https://www.zikinos.de/"
+    weight = 4
 
 [services]
   [services.rss]

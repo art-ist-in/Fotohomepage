@@ -1,0 +1,20 @@
+{{ define "main" }}
+  {{ partial "title.html" . }}
+  {{ partial "categories.html" }}
+  {{ $bigPicture := "" }}
+  {{ with .Site.Params.bigpicture }}{{ $bigPicture = resources.Get . }}{{ end }}
+  {{ if not (eq $bigPicture "") }}
+    {{ $thumbnail := $bigPicture.Filter (slice images.AutoOrient (images.Process "fit 1600x1600")) }}
+    {{ $color := index $thumbnail.Colors 0 | default "transparent" }}
+    <section class="featured">
+      <a class="featured-card" href="{{ .RelPermalink }}" style="background-color: {{ $color }}; background-image: url({{ $thumbnail.RelPermalink }})">
+      </a>
+    </section>
+  {{ end }}
+  {{ partial "featured.html" . }}
+  <section class="galleries">
+    {{ range where .Pages "Params.private" "ne" true }}
+      {{ partial "album-card.html" . }}
+    {{ end }}
+  </section>
+{{ end }}
