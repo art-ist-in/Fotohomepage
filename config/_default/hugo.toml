@@ -62,11 +62,3 @@ title = "art-ist-in"
 [services]
   [services.rss]
     limit = 100
-
-[[module.mounts]]
-source = 'static'
-target = 'static'
-
-[[module.mounts]]
-source = 'images'
-target = 'static/images'
