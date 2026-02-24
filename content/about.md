@@ -7,7 +7,7 @@ menu:
     weight: 90
 ---
 
-![Bild](images/profile.png)
+![Profil](/images/profile.png)
 
 
 # Überschrift
