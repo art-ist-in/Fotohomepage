@@ -1,7 +1,9 @@
 ---
 layout: prose
 rss_ignore: true
-title: Über mich
+title: über mich
+params:
+  private: true
 menu:
   main:
     weight: 90
