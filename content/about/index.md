@@ -14,7 +14,7 @@ menu:
 
 # Überschrift
 
-This is a demonstration site for the Hugo Gallery theme.
+welcome to my world of photography
 
 ## Zweite Überschrift
 
